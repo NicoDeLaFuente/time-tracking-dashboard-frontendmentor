@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+    max-height: 100vh;
+}
+
+.dashboard-big {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    padding: 5.8rem;
+    max-height: 100vh;
+    
+}
+
+.dashboard {
+    flex: .7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "work-card play-card study-card"
+     "exercise-card social-card selfcare-card";
+    gap: 3rem;
+    height: 65vh;
+    
+}
+
+.big-card {
+    /* grid-area: big-card; */
+    flex:.2;
+    height: 65vh;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+}
+
+.big-card-top {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1.5rem;
+    background-color:hsl(246, 80%, 60%);
+    border-radius: 1rem;
+    height: 70%;
+    padding: 2rem;
+}
+
+.big-card-top img {
+    width:70px;
+    height: 70px;
+}
+
+.big-card-name {
+    color:white;
+}
+
+.big-card-name small {
+    color: hsl(236, 100%, 87%); 
+}
+
+.big-card-name h1 {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.big-card-bottom {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+.big-card-bottom button {
+    background-color: transparent;
+    border:transparent;
+    text-align: left;
+    color: hsl(236, 100%, 87%);
+    cursor: pointer;
+}
+
+.big-card-bottom button:active {
+    color:white;
+}
+
+.big-card-bottom button:hover {
+    color:white;
+}
+
+.big-card-bottom .active {
+    color: white;
+}
+
+.work-card {
+    grid-area: work-card;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.work-card .card-img-top{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(../images/icon-work.svg);
+    background-position: right;
+    background-size:35%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 15%;
+    image-orientation: 25deg;
+    border-radius: 1rem;
+    height: 3rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.play-card {
+    grid-area: play-card;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.play-card .card-img-top{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(../images/icon-play.svg);
+    background-position: right;
+    background-size:35%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 15%;
+    image-orientation: 25deg;
+    border-radius: 1rem 1rem 0 0;
+    height: 3rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.study-card {
+    grid-area: study-card;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.study-card .card-img-top{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(../images/icon-study.svg);
+    background-position: right;
+    background-size:35%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 15%;
+    image-orientation: 25deg;
+    border-radius: 1rem 1rem 0 0;
+    height: 3rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.exercise-card {
+    grid-area: exercise-card;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.exercise-card .card-img-top{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(../images/icon-exercise.svg);
+    background-position: right;
+    background-size:35%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 15%;
+    image-orientation: 25deg;
+    border-radius: 1rem 1rem 0 0;
+    height: 3rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.social-card {
+    grid-area: social-card;
+    background-color: hsl(264, 64%, 52%);
+}
+
+.social-card .card-img-top{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(../images/icon-social.svg);
+    background-position: right;
+    background-size:30%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 15%;
+    image-orientation: 25deg;
+    border-radius: 1rem 1rem 0 0;
+    height: 3rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.selfcare-card {
+    grid-area: selfcare-card;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.selfcare-card .card-img-top{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(../images/icon-self-care.svg);
+    background-position: right;
+    background-size:25%;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    image-orientation: 25deg;
+    border-radius: 1rem 1rem 0 0;
+    height: 3rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+.small-card {
+    display:flex;
+    flex-direction: column;
+    
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.card-body-bottom {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 1rem;
+    border:hsl(235, 46%, 20%);
+    border-radius: 1rem;
+    background-color: hsl(235, 46%, 20%);
+    height: 80%;
+}
+
+.title {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 18px;
+    margin-left: .5rem;
+}
+
+.title h2, .title i {
+    font-size: 18px;
+}
+
+.title i:hover {
+    color: white;
+    cursor:grab;
+}
+
+.hour {
+    margin-left: .5rem;
+}
+.hour p {
+    font-size: 40px;
+    font-weight: 300;
+    color:white;
+    padding-bottom: .5rem;
+}
+
+.hour small {
+    color: hsl(236, 100%, 87%);
+}
+
+.attribution {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    color:white;
+}
+
+@media (max-width: 375px) {
+
+    .dashboard-big {
+        flex-direction: column;
+        max-height: none;
+        padding:3rem;
+        gap: 2rem;
+    }
+
+    .dashboard {
+        flex:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .big-card {
+        flex:0;
+    }
+    .big-card-top {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .big-card-bottom {
+        flex-direction: row;
+        margin-left: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding:2rem;
+    }
+
+    .small-card {
+        width: 100%;
+    }
+
+    .hour {
+        display:flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hour p {
+        font-size: 28px;
+    }
+}
