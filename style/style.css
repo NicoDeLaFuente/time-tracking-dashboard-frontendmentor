@@ -16,7 +16,7 @@ body {
     align-items: center;
     gap:3rem;
     padding: 5.8rem;
-    max-height: 100vh;
+    height: 95vh;
     
 }
 
@@ -29,14 +29,14 @@ body {
      "work-card play-card study-card"
      "exercise-card social-card selfcare-card";
     gap: 3rem;
-    height: 65vh;
+    height: 100%;
     
 }
 
 .big-card {
     /* grid-area: big-card; */
     flex:.2;
-    height: 65vh;
+    height: 100%;
     background-color: hsl(235, 46%, 20%);
     border-radius: 1rem;
 }
