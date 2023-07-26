@@ -41,8 +41,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - [Vanilla JavaScript] - native JS
-- [Styled Components](https://fonts.google.com/) - For typography
-- [Styled Components](https://icons.getbootstrap.com/) - For icons
 
 ### What I learned
 
@@ -87,6 +85,6 @@ My final goal is to become a Full Stack Developer. The path is long but I will d
 
 ## Author
 
-- Website - [Nicolas De La Fuente](currently building it)
+- GitHub - [Nicolas De La Fuente](https://github.com/NicoDeLaFuente))
 - Frontend Mentor - [@NicoDeLaFuente](https://www.frontendmentor.io/profile/NicoDeLaFuente)
 
